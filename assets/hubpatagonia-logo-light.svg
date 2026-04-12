@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160">
+  <!-- Light version: dark text on light background -->
+  <g transform="translate(50, 20)">
+    <!-- H letter with mountain crossbar -->
+    <rect x="0" y="0" width="18" height="90" fill="#0B1929"/>
+    <rect x="72" y="0" width="18" height="90" fill="#0B1929"/>
+    <!-- Mountain range crossbar -->
+    <polygon points="18,45 30,30 42,40 50,20 58,32 66,28 72,45 72,55 18,55" fill="#0B1929"/>
+    <!-- Glacier accents on peaks -->
+    <polygon points="46,24 50,20 54,26 50,28" fill="#7AD4E0"/>
+    <polygon points="62,32 66,28 69,34 65,35" fill="#7AD4E0"/>
+    <polygon points="28,34 30,30 34,36 31,37" fill="#7AD4E0"/>
+
+    <!-- U letter -->
+    <rect x="105" y="0" width="18" height="65" fill="#0B1929"/>
+    <rect x="153" y="0" width="18" height="65" fill="#0B1929"/>
+    <rect x="105" y="65" width="66" height="18" rx="9" fill="#0B1929"/>
+
+    <!-- B letter -->
+    <rect x="190" y="0" width="18" height="90" fill="#0B1929"/>
+    <path d="M208,0 H240 C258,0 270,12 270,27 C270,37 265,44 257,47 C267,50 274,59 274,70 C274,83 262,90 245,90 H208 V75 H243 C251,75 256,71 256,65 C256,59 251,55 243,55 H208 V35 H238 C246,35 251,31 251,25 C251,19 246,15 238,15 H208 Z" fill="#0B1929"/>
+  </g>
+
+  <!-- "patagonia" text -->
+  <text x="200" y="140" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="400" fill="#2A9AAA">patagonia</text>
+</svg>
