@@ -162,6 +162,12 @@
       width: auto;
       height: auto;
     }
+    .llm-logo-invert {
+      filter: invert(1);
+    }
+    html[data-theme="dark"] .llm-logo-invert {
+      filter: invert(0);
+    }
 
     /* Dark mode section styles */
     html[data-theme="dark"] .bg-background { background-color: var(--bg-primary) !important; }
@@ -392,10 +398,10 @@
       <div class="llm-carousel-wrapper reveal" style="animation-delay: 0.2s;">
         <div class="llm-carousel">
           <div class="llm-item" title="Claude">
-            <img src="https://cdn.simpleicons.org/anthropic/d97757" alt="Claude Logo">
+            <img src="https://www.vectorlogo.zone/logos/claude/claude-icon.svg" alt="Claude Logo">
           </div>
           <div class="llm-item" title="OpenAI">
-            <img src="https://cdn.simpleicons.org/openai/10a37f" alt="OpenAI Logo">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="OpenAI Logo" class="llm-logo-invert">
           </div>
           <div class="llm-item" title="Gemini">
             <img src="https://cdn.simpleicons.org/googlegemini/4285f4" alt="Gemini Logo">
@@ -420,10 +426,10 @@
           </div>
           <!-- Duplicate for seamless loop -->
           <div class="llm-item" title="Claude">
-            <img src="https://cdn.simpleicons.org/anthropic/d97757" alt="Claude Logo">
+            <img src="https://www.vectorlogo.zone/logos/claude/claude-icon.svg" alt="Claude Logo">
           </div>
           <div class="llm-item" title="OpenAI">
-            <img src="https://cdn.simpleicons.org/openai/10a37f" alt="OpenAI Logo">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="OpenAI Logo" class="llm-logo-invert">
           </div>
           <div class="llm-item" title="Gemini">
             <img src="https://cdn.simpleicons.org/googlegemini/4285f4" alt="Gemini Logo">
