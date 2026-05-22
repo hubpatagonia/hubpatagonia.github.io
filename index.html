@@ -141,7 +141,7 @@
       align-items: center;
       justify-content: center;
       min-width: 140px;
-      height: 80px;
+      height: 100px;
       background: var(--bg-secondary);
       border: 1px solid var(--border-color);
       border-radius: 12px;
@@ -155,12 +155,27 @@
       transform: translateY(-4px);
       box-shadow: 0 8px 16px rgba(37, 99, 235, 0.15);
     }
+    .llm-item-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+    }
     .llm-item img,
     .llm-item svg {
       max-width: 48px;
       max-height: 48px;
       width: auto;
       height: auto;
+    }
+    .llm-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-align: center;
+      letter-spacing: 0.5px;
     }
     .llm-logo-invert {
       filter: invert(1);
@@ -398,59 +413,107 @@
       <div class="llm-carousel-wrapper reveal" style="animation-delay: 0.2s;">
         <div class="llm-carousel">
           <div class="llm-item" title="Claude">
-            <img src="https://www.vectorlogo.zone/logos/claude/claude-icon.svg" alt="Claude Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/anthropic.svg" alt="Claude Logo">
+              <span class="llm-label">Claude</span>
+            </div>
           </div>
           <div class="llm-item" title="OpenAI">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="OpenAI Logo" class="llm-logo-invert">
+            <div class="llm-item-content">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/openai.svg" alt="OpenAI Logo" class="llm-logo-invert">
+              <span class="llm-label">OpenAI</span>
+            </div>
           </div>
           <div class="llm-item" title="Gemini">
-            <img src="https://cdn.simpleicons.org/googlegemini/4285f4" alt="Gemini Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/googlegemini/4285f4" alt="Gemini Logo">
+              <span class="llm-label">Gemini</span>
+            </div>
           </div>
           <div class="llm-item" title="Grok">
-            <img src="https://cdn.simpleicons.org/x/000000" alt="Grok Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/x/000000" alt="Grok Logo">
+              <span class="llm-label">Grok</span>
+            </div>
           </div>
           <div class="llm-item" title="Perplexity">
-            <img src="https://cdn.simpleicons.org/perplexity/228e96" alt="Perplexity Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/perplexity/228e96" alt="Perplexity Logo">
+              <span class="llm-label">Perplexity</span>
+            </div>
           </div>
           <div class="llm-item" title="Ollama">
-            <img src="https://cdn.simpleicons.org/ollama/000000" alt="Ollama Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/ollama/000000" alt="Ollama Logo">
+              <span class="llm-label">Ollama</span>
+            </div>
           </div>
           <div class="llm-item" title="LLaMA">
-            <img src="https://cdn.simpleicons.org/meta/044af0" alt="LLaMA Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/meta/044af0" alt="LLaMA Logo">
+              <span class="llm-label">LLaMA</span>
+            </div>
           </div>
           <div class="llm-item" title="Kimi">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <circle cx="24" cy="24" r="20" fill="#0052D4" opacity="0.1" stroke="#0052D4" stroke-width="2"/>
-              <path d="M24 8C24 8 18 14 18 20C18 26 21 30 24 32C27 30 30 26 30 20C30 14 24 8 24 8Z" fill="#0052D4"/>
-            </svg>
+            <div class="llm-item-content">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#0052D4" opacity="0.1" stroke="#0052D4" stroke-width="2"/>
+                <path d="M24 8C24 8 18 14 18 20C18 26 21 30 24 32C27 30 30 26 30 20C30 14 24 8 24 8Z" fill="#0052D4"/>
+              </svg>
+              <span class="llm-label">Kimi</span>
+            </div>
           </div>
           <!-- Duplicate for seamless loop -->
           <div class="llm-item" title="Claude">
-            <img src="https://www.vectorlogo.zone/logos/claude/claude-icon.svg" alt="Claude Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/anthropic.svg" alt="Claude Logo">
+              <span class="llm-label">Claude</span>
+            </div>
           </div>
           <div class="llm-item" title="OpenAI">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="OpenAI Logo" class="llm-logo-invert">
+            <div class="llm-item-content">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/openai.svg" alt="OpenAI Logo" class="llm-logo-invert">
+              <span class="llm-label">OpenAI</span>
+            </div>
           </div>
           <div class="llm-item" title="Gemini">
-            <img src="https://cdn.simpleicons.org/googlegemini/4285f4" alt="Gemini Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/googlegemini/4285f4" alt="Gemini Logo">
+              <span class="llm-label">Gemini</span>
+            </div>
           </div>
           <div class="llm-item" title="Grok">
-            <img src="https://cdn.simpleicons.org/x/000000" alt="Grok Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/x/000000" alt="Grok Logo">
+              <span class="llm-label">Grok</span>
+            </div>
           </div>
           <div class="llm-item" title="Perplexity">
-            <img src="https://cdn.simpleicons.org/perplexity/228e96" alt="Perplexity Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/perplexity/228e96" alt="Perplexity Logo">
+              <span class="llm-label">Perplexity</span>
+            </div>
           </div>
           <div class="llm-item" title="Ollama">
-            <img src="https://cdn.simpleicons.org/ollama/000000" alt="Ollama Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/ollama/000000" alt="Ollama Logo">
+              <span class="llm-label">Ollama</span>
+            </div>
           </div>
           <div class="llm-item" title="LLaMA">
-            <img src="https://cdn.simpleicons.org/meta/044af0" alt="LLaMA Logo">
+            <div class="llm-item-content">
+              <img src="https://cdn.simpleicons.org/meta/044af0" alt="LLaMA Logo">
+              <span class="llm-label">LLaMA</span>
+            </div>
           </div>
           <div class="llm-item" title="Kimi">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <circle cx="24" cy="24" r="20" fill="#0052D4" opacity="0.1" stroke="#0052D4" stroke-width="2"/>
-              <path d="M24 8C24 8 18 14 18 20C18 26 21 30 24 32C27 30 30 26 30 20C30 14 24 8 24 8Z" fill="#0052D4"/>
-            </svg>
+            <div class="llm-item-content">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#0052D4" opacity="0.1" stroke="#0052D4" stroke-width="2"/>
+                <path d="M24 8C24 8 18 14 18 20C18 26 21 30 24 32C27 30 30 26 30 20C30 14 24 8 24 8Z" fill="#0052D4"/>
+              </svg>
+              <span class="llm-label">Kimi</span>
+            </div>
           </div>
         </div>
       </div>
